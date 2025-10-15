@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.18.1](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.18.0...v5.18.1) (2025-01-28)
+
+
+### Bug Fixes
+
+* Fixed service_region argument in the VPC endpoint module ([#1162](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1162)) ([5415dee](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/5415deebeb608f1e622a336f045c79b08d144f46))
+
+## [5.18.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.17.0...v5.18.0) (2025-01-27)
+
+
+### Features
+
+* Support for cross region VPC endpoints ([#1161](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1161)) ([7e205ad](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/7e205ad0513fe00290b9570cabf52f5e7ce6b84f))
+
+## [5.17.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.16.0...v5.17.0) (2024-12-18)
+
+
+### Features
+
+* Define default name for VPC endpoint ([#1151](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1151)) ([41348d3](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/41348d36b3fee6bc5cd58fed18c1210401ea128e))
+
+## [5.16.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.15.0...v5.16.0) (2024-11-18)
+
+
+### Features
+
+* Added additional conditions into Flow Log IAM Role Assumption Policy ([#1138](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1138)) ([7744d3f](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/7744d3fea63db36bcb15485f3694c0646be44da0))
+
 ## [5.15.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.14.0...v5.15.0) (2024-11-03)
 
 
