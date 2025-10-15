@@ -2,6 +2,80 @@
 
 All notable changes to this project will be documented in this file.
 
+## [6.4.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v6.3.0...v6.4.0) (2025-09-29)
+
+
+### Features
+
+* Add wrappers ([#1243](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1243)) ([112bb7f](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/112bb7f163fff12ff7c8400bc5ffdd8674b304a5))
+
+## [6.3.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v6.2.0...v6.3.0) (2025-09-26)
+
+
+### Features
+
+* Add new sub-module for AWS flow log ([#1241](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1241)) ([33aabec](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/33aabec82036e00240b0fcfb04f1e29297a48b1b))
+
+## [6.2.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v6.1.0...v6.2.0) (2025-09-22)
+
+
+### Features
+
+* Add support for IAM role path to VPC flow log IAM role ([#1232](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1232)) ([6594a41](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/6594a41db42e26db84882ba10c3be30fcb291cc4))
+
+## [6.1.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v6.0.1...v6.1.0) (2025-09-22)
+
+
+### Features
+
+* Add enhanced region support ([#1225](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1225)) ([fd357b9](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/fd357b932ec2d7719779e4fcd586f4538a62d495))
+
+## [6.0.1](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v6.0.0...v6.0.1) (2025-06-20)
+
+
+### Bug Fixes
+
+* Bump AWS provider requirement to v6 everywhere ([#1208](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1208)) ([26c99a5](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/26c99a53326e7455a7f9f1162839822104809c46))
+
+## [6.0.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.21.1...v6.0.0) (2025-06-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* Bump AWS provider requirement to v6 (#1205)
+
+### Features
+
+* Bump AWS provider requirement to v6 ([#1205](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1205)) ([4483701](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/4483701c77f661b4ed3b468e5229e030e540d6f3))
+
+## [5.21.1](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.21.0...v5.21.1) (2025-06-19)
+
+
+### Bug Fixes
+
+* Fixed deprecation attribute warning with AWS provider v6 ([#1200](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1200)) ([bf04a75](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/bf04a755dc0b46d49dadf589c84832c0dd556a6d))
+
+## [5.21.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.20.0...v5.21.0) (2025-04-21)
+
+
+### Features
+
+* Add support for `subnet_configuration` on VPC endpoints ([#1164](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1164)) ([507193e](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/507193ee659f6f0ecdd4a75107e59e2a6c1ac3cc))
+
+## [5.20.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.19.0...v5.20.0) (2025-04-21)
+
+
+### Features
+
+* Allow setting custom tags on `aws_vpc_block_public_access_exclusion` resource ([#1170](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1170)) ([0d11295](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/0d11295d8b45f1319c46bfd044030035e9e02445))
+
+## [5.19.0](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.18.1...v5.19.0) (2025-02-12)
+
+
+### Features
+
+* Enhancing VPC Security with Amazon VPC Block Public Access ([#1159](https://github.com/terraform-aws-modules/terraform-aws-vpc/issues/1159)) ([387f5ee](https://github.com/terraform-aws-modules/terraform-aws-vpc/commit/387f5eeef45134eccf18b24eba62c883a57fadd8))
+
 ## [5.18.1](https://github.com/terraform-aws-modules/terraform-aws-vpc/compare/v5.18.0...v5.18.1) (2025-01-28)
 
 

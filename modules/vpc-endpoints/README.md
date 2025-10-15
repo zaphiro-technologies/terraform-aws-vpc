@@ -22,13 +22,24 @@ module "endpoints" {
     dynamodb = {
       # gateway endpoint
       service         = "dynamodb"
+      service_type    = "Gateway"
       route_table_ids = ["rt-12322456", "rt-43433343", "rt-11223344"]
       tags            = { Name = "dynamodb-vpc-endpoint" }
     },
     sns = {
-      service    = "sns"
-      subnet_ids = ["subnet-12345678", "subnet-87654321"]
-      tags       = { Name = "sns-vpc-endpoint" }
+      service               = "sns"
+      subnet_ids            = ["subnet-12345678", "subnet-87654321"]
+      subnet_configurations = [
+        {
+          ipv4      = "10.8.34.10"
+          subnet_id = "subnet-12345678"
+        },
+        {
+          ipv4      = "10.8.35.10"
+          subnet_id = "subnet-87654321"
+        }
+      ]
+      tags = { Name = "sns-vpc-endpoint" }
     },
     sqs = {
       service             = "sqs"
@@ -56,13 +67,13 @@ module "endpoints" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.83 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.83 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 6.0 |
 
 ## Modules
 
@@ -84,6 +95,7 @@ No modules.
 | <a name="input_create"></a> [create](#input\_create) | Determines whether resources will be created | `bool` | `true` | no |
 | <a name="input_create_security_group"></a> [create\_security\_group](#input\_create\_security\_group) | Determines if a security group is created | `bool` | `false` | no |
 | <a name="input_endpoints"></a> [endpoints](#input\_endpoints) | A map of interface and/or gateway endpoints containing their properties and configurations | `any` | `{}` | no |
+| <a name="input_region"></a> [region](#input\_region) | Region where the resource(s) will be managed. Defaults to the region set in the provider configuration. If a value is provided, `service_endpoint` must be specified due to https://github.com/hashicorp/terraform-provider-aws/issues/42462 | `string` | `null` | no |
 | <a name="input_security_group_description"></a> [security\_group\_description](#input\_security\_group\_description) | Description of the security group created | `string` | `null` | no |
 | <a name="input_security_group_ids"></a> [security\_group\_ids](#input\_security\_group\_ids) | Default security group IDs to associate with the VPC endpoints | `list(string)` | `[]` | no |
 | <a name="input_security_group_name"></a> [security\_group\_name](#input\_security\_group\_name) | Name to use on security group created. Conflicts with `security_group_name_prefix` | `string` | `null` | no |
